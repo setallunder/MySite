@@ -1,0 +1,70 @@
+﻿<!--Каждая компания состоит из: название, список «бонусов», краткое описание с поддержкой форматирования markdawn, «тематика»
+(из фиксированного набора, например, «Electronics», «Education» и проч.),
+тэги (вводится несколько тэгов, необходимо автодополнение – когда пользователь вводит тэг, выпадает список с вариантом слов, которые уже вводились ранее на сайте),
+видео (YouTube), галерея изображений (хранение в облаке), целевая сумма денег (все суммы в у.е.) и дата окончания.
+Помимо этого, у компании есть новости – лента с заголовком и блоком текста с поддержкой форматирования markdawn и 1 опциональной картинкой (хранение в облаке).
+По новостям автоматически формируется навигация в виде календаря рядом с описанием. На странице компании можно добавлять/удалять/открывать на редактирование новости
+и бонусы (например, переведешь 5 у.е. получишь футболку с логотипом и т.д.). Каждый бонус имеет название, сумму и описание.
+Все картинки сохраняются в облаке, все картинки драг-н-дропом.-->
+
+<br />
+<!doctype html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <title>Main</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="page">
+            <div id="content">
+                <article>
+                    <!--название, краткое описание с поддержкой форматирования markdawn,  «тематика» (из фиксированного набора, например, «Electronics», «Education» и проч.), дата окончания-->
+                </article>
+
+                <article>
+                    <!--тэги (вводится несколько тэгов, необходимо автодополнение – когда пользователь вводит тэг, выпадает список с вариантом слов, которые уже вводились ранее на сайте),-->
+                </article>
+
+                <article>
+                    <!--список «бонусов»-->
+                </article>
+
+                <article>
+                    <div class="form-file">
+                        <input type="file" class="form-file-input" id="customFile" />
+                        <label class="form-file-label" for="customFile">
+                            <span class="form-file-text">Choose file...</span>
+                            <span class="form-file-button">Browse</span>
+                        </label>
+                    </div><!--загруска изображений и отправка их в облако, галерея изображений (хранение в облаке)-->
+                </article>
+
+                <article>
+                    <!--видео (YouTube)-->
+                </article>
+            </div>
+
+            <aside>
+                <!--новости-->
+            </aside>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+    <!--Option 2: Separate Popper.js and Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+
+</body>
+</html>

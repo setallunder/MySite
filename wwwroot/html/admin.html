@@ -1,0 +1,135 @@
+﻿<!--Админка позволяет управлять пользователями (просматривать, блокировать, удалять, назначать других админами).
+Администратор видит каждую страницу пользователя и каждую компанию как ее создатель
+(например, может отредактировать или создать от имени пользователя с его страницы новую компанию).-->
+
+<br />
+<!doctype html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <title>Admin</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="page">
+            <div id="content">
+                <article>
+                    <img src="..." class="img-thumbnail" alt="..." />
+                    <!-- Editable table -->
+                    <div class="card">
+                        <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Editable table</h3>
+                        <div class="card-body">
+                            <div id="table" class="table-editable">
+                                <span class="table-add float-right mb-3 mr-2">
+                                    <a href="#!" class="text-success">
+                                        <i class="fas fa-plus fa-2x" aria-hidden="true"></i>
+                                    </a>
+                                </span>
+                                <table class="table table-bordered table-responsive-md table-striped text-center">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Имя</th>
+                                            <th class="text-center">Возраст</th>
+                                            <th class="text-center">Страна</th>
+                                            <th class="text-center">Город</th>
+                                            <th class="text-center">Сортировать</th>
+                                            <th class="text-center">Удолить</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="pt-3-half" contenteditable="true">Aurelia Vega</td>
+                                            <td class="pt-3-half" contenteditable="true">30</td>
+                                            <td class="pt-3-half" contenteditable="true">Spain</td>
+                                            <td class="pt-3-half" contenteditable="true">Madrid</td>
+                                            <td class="pt-3-half">
+                                                <span class="table-up">
+                                                    <a href="#!" class="indigo-text">
+                                                        <i class="fas fa-long-arrow-alt-up"
+                                                           aria-hidden="true"></i>
+                                                    </a>
+                                                </span>
+                                                <span class="table-down">
+                                                    <a href="#!" class="indigo-text">
+                                                        <i class="fas fa-long-arrow-alt-down"
+                                                           aria-hidden="true"></i>
+                                                    </a>
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="table-remove">
+                                                    <button type="button"
+                                                            class="btn btn-danger btn-rounded btn-sm my-0">
+                                                        Remove
+                                                    </button>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Пользователь</th><!--ссылка на пользователя-->
+                                <th scope="col">Назначить админом</th>
+                                <th scope="col">Блокировать</th>
+                                <th scope="col">Удалить</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <!--ссылка на пользователя-->
+                                </td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <article>
+                    <!--медальки создать-->
+                </article>
+
+                <article>
+                    <!--бонусы создать-->
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+
+    <!--Option 2: Separate Popper.js and Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+
+</body>
+</html>
