@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "desktop-e7l10uh.my-dream-app.dbo",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}
