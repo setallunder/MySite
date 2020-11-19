@@ -25,27 +25,52 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    <h2>Создание компании</h2>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col">
                     <!--название, краткое описание с поддержкой форматирования markdawn,  «тематика» (из фиксированного набора, например, «Electronics», «Education» и проч.), дата окончания-->
                 </div>
             </div>
         </div>
-
+        <br />
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <!--тэги (вводится несколько тэгов, необходимо автодополнение – когда пользователь вводит тэг, выпадает список с вариантом слов, которые уже вводились ранее на сайте),-->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div><!--тэги (вводится несколько тэгов, необходимо автодополнение – когда пользователь вводит тэг, выпадает список с вариантом слов, которые уже вводились ранее на сайте),-->
                 </div>
             </div>
         </div>
-
+        <br />
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <!--список «бонусов»-->
+                    <h5>Бонусы</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul><!--список «бонусов»-->
                 </div>
             </div>
         </div>
-
+        <br />
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -59,7 +84,7 @@
                 </div>
             </div>
         </div>
-
+        <br />
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -67,14 +92,42 @@
                 </div>
             </div>
         </div>
-
+        <br />
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <!--новости-->
+                    <form class="was-validated">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="validationDefault01" placeholder="Тема" required>
+                        </div>
+                        <br />
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Выберите тэг</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <br />
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="Username" required>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="mb-3">
+                            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Описание" required></textarea>
+                        </div>
+                        <br />
+                        <div class="mb-3">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                        <br />
+                    </form><!--новости-->
                 </div>
             </div>
         </div>
+        <br />
     </div>
 
 
