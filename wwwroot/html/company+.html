@@ -36,7 +36,7 @@
                         <label for="star-2" title="Оценка «2»"></label>
                         <input type="radio" id="star-1" name="rating" value="1" />
                         <label for="star-1" title="Оценка «1»"></label>
-                    </div><!--рейтинг-->
+                    </div><!--рейтинг (выводится)-->
                 </div>
             </div>
         </div>
@@ -44,7 +44,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <!--название и описание-->
+                    <h4>название</h4>
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div><!--название и описание (выводится)-->
                 </div>
             </div>
         </div>
@@ -54,11 +57,7 @@
                 <div class="col">
                     <ul class="list-group">
                         <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Morbi leo risus</li>
-                        <li class="list-group-item">Porta ac consectetur ac</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul><!--теги-->
+                    </ul><!--теги (выводится)-->
                 </div>
             </div>
         </div>
@@ -66,7 +65,22 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <!--бонусы и поддержать-->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Бонусы</th>
+                                <th scope="col">Поддержать</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td><button type="button" class="btn btn-danger">Поддержать</button></td>
+                            </tr>
+                        </tbody>
+                    </table><!--бонусы (выводится) и кнопка поддержать-->
                 </div>
             </div>
         </div>
@@ -86,7 +100,7 @@
                                 <img src="..." class="d-block w-100" alt="..." />
                             </div>
                         </div>
-                    </div><!--галерея изображений (хранение в облаке)-->
+                    </div><!--галерея изображений (выводится) (хранение в облаке)-->
                 </div>
             </div>
         </div>
@@ -94,7 +108,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <!--видео (YouTube)-->
+                    <!--видео (YouTube) (выводится)-->
                 </div>
             </div>
         </div>
@@ -103,8 +117,8 @@
             <div class="row">
                 <div class="col">
                     <div class="input-group">
-                        <span class="input-group-text"><input class="btn btn-primary" type="submit" value="Submit"></span>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <span class="input-group-text"><input class="btn btn-primary" type="submit" value="Submit"></span>
                     </div><!--комментарии-->
                 </div>
             </div>
@@ -117,7 +131,7 @@
                         <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
                         <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
                         <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                    </div><!--новости-->
+                    </div><!--новости (выводится)-->
                 </div>
             </div>
         </div>

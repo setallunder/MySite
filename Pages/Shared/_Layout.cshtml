@@ -29,17 +29,41 @@
                                                 Вход
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Ещё не зарегестрированы? Зарегестрироваться</a></li>
                                                 <li><a class="dropdown-item" href="#">Google</a></li>
                                                 <li><a class="dropdown-item" href="#">Facebook</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                                Регистрация
-                                            </a>
-                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><a class="dropdown-item" href="#">Google</a></li>
-                                                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                                                <li>
+                                                    <br />
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                или
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br />
+                                                </li>
+                                                <li>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <form>
+                                                                    <div class="row mb-3">
+                                                                        <div class="col-sm-10">
+                                                                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mb-3">
+                                                                        <div class="col-sm-10">
+                                                                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="submit" class="btn btn-primary">Вход</button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -62,7 +86,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-            &copy; 2020 - MySite - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        &copy; 2020 - MySite - <a asp-area="" asp-page="/Privacy">Privacy</a>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
