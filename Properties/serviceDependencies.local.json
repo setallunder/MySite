@@ -7,6 +7,10 @@
       "type": "mssql.local",
       "connectionId": "desktop-e7l10uh.my-dream-app.dbo",
       "secretStore": "LocalSecretsFile"
+    },
+    "mssql2": {
+      "type": "mssql.local",
+      "connectionId": "MySiteContext"
     }
   }
 }

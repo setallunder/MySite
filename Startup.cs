@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MySite.Data;
 
 namespace MySite
 {
@@ -25,8 +26,9 @@ namespace MySite
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddDbContext<CatalogContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDbContext<CatalogContext>(options => options.UseInMemoryDatabase());
+
+            services.AddDbContext<MySiteContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MySiteContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

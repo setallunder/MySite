@@ -6,6 +6,10 @@
     "mssql1": {
       "type": "mssql",
       "connectionId": "desktop-e7l10uh.my-dream-app.dbo"
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "MySiteContext"
     }
   }
 }
