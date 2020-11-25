@@ -32,6 +32,7 @@ namespace MySite.Models
                         Video = "",
                         Topic = "Зоопарк",
                         ExpiryDate = DateTime.Parse("2021-3-13")
+                        Rating = "R"
                     },
 
                     new Company
@@ -43,6 +44,7 @@ namespace MySite.Models
                         Video = "",
                         Topic = "Часовня",
                         ExpiryDate = DateTime.Parse("2021-3-13")
+                        Rating = "R"
                     },
 
                     new Company
@@ -54,6 +56,7 @@ namespace MySite.Models
                         Video = "",
                         Topic = "RAMMSTEIN",
                         ExpiryDate = DateTime.Parse("2021-3-13")
+                        Rating = "R"
                     },
 
                     new Company
@@ -65,6 +68,7 @@ namespace MySite.Models
                         Video = "",
                         Topic = "Тигр",
                         ExpiryDate = DateTime.Parse("2021-3-13")
+                        Rating = "R"
                     }
                 );
                 context.SaveChanges();

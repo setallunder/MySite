@@ -13,6 +13,9 @@
 
 <form>
     <p>
+        <select asp-for="CompanyTags" asp-items="Model.Companys">
+            <option value="">All</option>
+        </select>
         Title: <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
     </p>
@@ -42,11 +45,15 @@
             <th>
                 @Html.DisplayNameFor(model => model.Company[0].ExpiryDate)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Company[0].Rating)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Company) {
+        @foreach (var item in Model.Company)
+        {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
@@ -70,11 +77,14 @@
                 @Html.DisplayFor(modelItem => item.ExpiryDate)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>

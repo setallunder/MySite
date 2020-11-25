@@ -25,7 +25,7 @@ namespace MySite.Models
         public string SearchString { get; set; }
         public SelectList Companys { get; set; }
         [BindProperty(SupportsGet = true)]
-        public string CompanyGenre { get; set; }
+        public string CompanyTags { get; set; }
 
         public async Task OnGetAsync()
         {
@@ -42,9 +42,9 @@ namespace MySite.Models
                 company = company.Where(s => s.Title.Contains(SearchString));
             }
 
-            if (!string.IsNullOrEmpty(CompanyGenre))
+            if (!string.IsNullOrEmpty(CompanyTags))
             {
-                company = company.Where(x => x.Tags == CompanyGenre);
+                company = company.Where(x => x.Tags == CompanyTags);
             }
             Companys = new SelectList(await genreQuery.Distinct().ToListAsync());
             Company = await company.ToListAsync();
