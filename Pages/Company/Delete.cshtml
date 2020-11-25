@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int}"
 @model MySite.Models.DeleteModel
 
 @{
@@ -61,7 +61,7 @@
             @Html.DisplayFor(model => model.Company.Rating)
         </dd>
     </dl>
-    
+
     <form method="post">
         <input type="hidden" asp-for="Company.ID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
