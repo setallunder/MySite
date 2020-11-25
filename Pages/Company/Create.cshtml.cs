@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MySite.Data;
-using RazorPagesMovie.Models;
+using MySite.Models;
 
 namespace MySite.Models
 {

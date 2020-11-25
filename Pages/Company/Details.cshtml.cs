@@ -6,20 +6,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using MySite.Data;
-using RazorPagesMovie.Models;
+using MySite.Models;
 
 namespace MySite.Models
 {
-    public class DeleteModel : PageModel
+    public class DetailsModel : PageModel
     {
         private readonly MySite.Data.MySiteContext _context;
 
-        public DeleteModel(MySite.Data.MySiteContext context)
+        public DetailsModel(MySite.Data.MySiteContext context)
         {
             _context = context;
         }
 
-        [BindProperty]
         public Company Company { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
@@ -36,24 +35,6 @@ namespace MySite.Models
                 return NotFound();
             }
             return Page();
-        }
-
-        public async Task<IActionResult> OnPostAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            Company = await _context.Company.FindAsync(id);
-
-            if (Company != null)
-            {
-                _context.Company.Remove(Company);
-                await _context.SaveChangesAsync();
-            }
-
-            return RedirectToPage("./Index");
         }
     }
 }

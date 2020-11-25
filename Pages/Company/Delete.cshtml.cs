@@ -4,18 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MySite.Data;
-using RazorPagesMovie.Models;
+using MySite.Models;
 
 namespace MySite.Models
 {
-    public class EditModel : PageModel
+    public class DeleteModel : PageModel
     {
         private readonly MySite.Data.MySiteContext _context;
 
-        public EditModel(MySite.Data.MySiteContext context)
+        public DeleteModel(MySite.Data.MySiteContext context)
         {
             _context = context;
         }
@@ -39,39 +38,22 @@ namespace MySite.Models
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (!ModelState.IsValid)
+            if (id == null)
             {
-                return Page();
+                return NotFound();
             }
 
-            _context.Attach(Company).State = EntityState.Modified;
+            Company = await _context.Company.FindAsync(id);
 
-            try
+            if (Company != null)
             {
+                _context.Company.Remove(Company);
                 await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CompanyExists(Company.ID))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
             }
 
             return RedirectToPage("./Index");
-        }
-
-        private bool CompanyExists(int id)
-        {
-            return _context.Company.Any(e => e.ID == id);
         }
     }
 }
