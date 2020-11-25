@@ -31,7 +31,7 @@ namespace MySite.Models
                         Images = "",
                         Video = "",
                         Topic = "Зоопарк",
-                        ExpiryDate = DateTime.Parse("2021-3-13")
+                        ExpiryDate = DateTime.Parse("2021-3-13"),
                         Rating = "R"
                     },
 
@@ -43,7 +43,7 @@ namespace MySite.Models
                         Images = "",
                         Video = "",
                         Topic = "Часовня",
-                        ExpiryDate = DateTime.Parse("2021-3-13")
+                        ExpiryDate = DateTime.Parse("2021-3-13"),
                         Rating = "R"
                     },
 
@@ -55,7 +55,7 @@ namespace MySite.Models
                         Images = "",
                         Video = "",
                         Topic = "RAMMSTEIN",
-                        ExpiryDate = DateTime.Parse("2021-3-13")
+                        ExpiryDate = DateTime.Parse("2021-3-13"),
                         Rating = "R"
                     },
 
@@ -67,7 +67,7 @@ namespace MySite.Models
                         Images = "",
                         Video = "",
                         Topic = "Тигр",
-                        ExpiryDate = DateTime.Parse("2021-3-13")
+                        ExpiryDate = DateTime.Parse("2021-3-13"),
                         Rating = "R"
                     }
                 );
